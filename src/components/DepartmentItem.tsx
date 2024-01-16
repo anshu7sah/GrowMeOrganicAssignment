@@ -13,9 +13,6 @@ const DepartmentItem: React.FC<DepartmentItemProps> = ({
   subDepartments,
 }) => {
   const [expanded, setExpanded] = useState(false);
-  console.log(
-    `${department} ${isPresent(selectedDepartments, subDepartments)}`
-  );
 
   const handleToggle = () => {
     setExpanded(!expanded);
